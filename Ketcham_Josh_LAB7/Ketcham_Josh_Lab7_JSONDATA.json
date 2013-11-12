@@ -1,0 +1,20 @@
+//JSON Data
+//Lab 7
+
+var mybooksjson = {
+"mybooks":
+	[
+		{
+			"title": "A Game of Thrones",
+			"author": "George R.R. Martin",
+			"publisher":"Bantam Spectra",
+			"publishing_year": 1996
+		},
+		{
+			"title": "The Hobbit",
+			"author": "J.R.R. Tolkien",
+			"publisher":"George Allen & Unwin",
+			"publishing_year": 1937
+		}
+	]
+};
