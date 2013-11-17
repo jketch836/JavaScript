@@ -49,21 +49,20 @@
         var dateone  = new Date(date1);
         var datetwo  = new Date(date2);
         var timediff = dateone - datetwo;
-            if (string === "Hours") {
+            if (string === "Hours"|| string === "hours") {
                 return Math.round(((timediff/1000)/60)/60);
-            } else if (string === "Days") {
+            } else if (string === "Days" || string === "days") {
                 return Math.round((((timediff/1000)/60)/60)/24);
             } else {
-              prompt("Cannot compute. There is a Invalid String. Please try again.");  
+              console.log ("Cannot compute. There is a Invalid String. Please try again.");  
             };
     };
     
     //Main Code
-    var dateoneprmpt= prompt("Please enter the first Date", "Month/Day/Year");
-    var datetwoprmpt= prompt("Please enter the second Date", "Month/Day/Year");
+    var dateoneprmpt= prompt("Please enter the first Date. Enter as:", "MM/DD/YYYY");
+    var datetwoprmpt= prompt("Please enter the second Date. Enter as:", "MM/DD/YYYY");
     var datediffprmpt= prompt("What do you want to do?", "Compute in Days or Hours?")
     
     var totalTime= thedates(dateoneprmpt,datetwoprmpt,datediffprmpt);
-    //console.log(totalTime);
-    console.log("It took " ,totalTime ," for King Robb to get to his Uncle's Wedding.");
+    console.log(totalTime ," is the amount of " , datediffprmpt , " it took for someone somewhere to travel from point A to B.");
     
